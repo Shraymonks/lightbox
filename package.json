@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "babel-core": "^6.22.1",
+    "babel-loader": "^6.2.10",
+    "babel-polyfill": "^6.22.0",
+    "babel-preset-latest": "^6.22.0",
+    "babel-preset-stage-3": "^6.22.0",
+    "watch": "^1.0.1",
+    "webpack": "beta"
+  },
+  "scripts": {
+    "copy": "mkdir -p dist && cp src/*.{css,html} dist/",
+    "build": "npm run copy && webpack",
+    "watch": "watch 'npm run build' ./src"
+  }
+}
